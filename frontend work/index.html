@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">home</a>
+    <a href="setting.html">settings</a>
+  </nav>
+  <div class="aa">
+    <h1>Medicine Tracker</h1>
+    <p> A simple solution to tracking all of your prescriptions</p>
+
+    <div class="box">
+    <div class="prescriptionList">
+    <p class="main-text">No prescriptions added yet</p>
+    <p class="sub-text">click the blue + button to add a prescriptions</p>
+    </div>
+
+    <button class="add-btn">+</button>
+    </div>
+
+  
+  <div id="addMedModal" class="modal">
+    <div class="modal-content">
+    <h2>Add new medican</h2>
+
+    <form id="medForm" onsubmit="event.preventDefault();"> 
+    <input type="text" id="medName" placeholder="Medicine Name(e.g, Tylenol" required>
+    <input type="text" id="medExpiry" required>
+    <input type="number" id="medDosage" placeholder="Dosage per day(e.g, 2)" required>  
+    <input type="text" id="medSize" placeholder="Dosage size(e.g, 500mg)" required>
+
+      <select id="medType">
+        <option value="" disabled selected>Select type</option>
+        <option value="tablet">Tablet</option>
+        <option value="syrup">Syrup</option>
+        <option value="capsule">Capsule</option>
+
+        </select>
+
+  <input type="text" id="medNotes" placeholder="Additional Notes(e.g, take with food)" required>  
+  <button type="submit" class="save-btn">Save Medicine</button>
+      <button class="close-btn">&times;</button>
+      </form>
+    </div>
+  </div>
+
+    <div id="reminderModal" class="modal">
+    <div class="modal-content">
+    <h2>Time to take your medication</h2>
+    <div id="reminderlist"></div>"
+    <button id="saveConfirmTakenBtn" class="confirm-btn">Took My Medication</button>
+    </div>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

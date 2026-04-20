@@ -1,0 +1,80 @@
+#medForm{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.section-title{
+  text-align: left;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 8px;
+  color:grey;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#medForm input[type="text"], #medForm input[type="email"], #medForm input[type="tel"], #medForm input[type="password"]{
+  padding: 12px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#medForm input:focus, #medForm select:focus{
+  outline: none;
+  border: 1px solid blue;
+}
+
+.section-row{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+.setting-row label{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.setting-row input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: green;
+}
+#reminderTime{
+  padding: 8px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.divider{
+  border: 0;
+  border-top: 1px solid lightgrey;
+  margin: 30px 0 15px 0;
+}
+
+.bottom-btns{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.download-btn, .override-btn{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight:bold;
+  transition: 0.3s;
+}
+.download-btn, .override-btn{
+  background-color: blue;
+  color: white;
+}
+.download-btn:hover, .override-btn:hover{
+  backgrond-color: darkblue;
+}

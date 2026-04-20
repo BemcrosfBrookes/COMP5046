@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./timeOverRide.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="aa">
+  <div class="box">
+  <a href="setting.html" class ="back-btn"></a>
+    <h1>Time Travle Dashboard</h1>
+<form id="overrideForm" onsubmit="event.preventDefault();">
+  
+  <div class="prescriptionList">
+    <h3>Actual Time</h3>
+    <p name="actualTime" id="actualTime">-- / -- / ---- --:--:--</p>
+
+    <h3>Active Override Time</h3>
+    <p name="displayOverrideTime" id="displayOverrideTime">-- / -- / ---- --:--:--</p>
+  </div>
+
+    <div class="prescriptionList">
+      <h3>Input overided date</h3>
+      <div class="time-input-section">
+        <input  type="date" name="overrideDate" id="overrideDate" required>
+      </div>
+      </div>
+    <div class="prescriptionList">
+      <h3>Input overided time</h3>
+      <div class="time-input-section">
+        <input type="time" name="overrideTime" id="overrideTime" required>
+      </div>
+    </div>
+  
+    <button class="save-btn" id="saveOverride">TIME TRAVLE</button>
+</form>
+  
+    
+  </div>
+  </div>  
+</body>
+</html>

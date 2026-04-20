@@ -1,0 +1,13 @@
+#actualTime, #overrideTime
+{font-size: 22px;
+font-weight: bold;
+color: blue;
+}
+.time-input-section input{
+  width: 60%;
+  padding: 12px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+

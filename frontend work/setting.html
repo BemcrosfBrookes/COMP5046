@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="settings.css" rel="stylesheet" type="text/css" />
+  
+
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">home</a>
+    <a href="setting.html">settings</a>
+
+  </nav>
+  <div class="aa">
+    <h1>Setting page</h1>
+
+    <div class="box">
+
+    <form id="medForm" onsubmit="event.preventDefault();">
+      
+      <h2>personal detail</h2>
+    <input type="text" name="firstname" id="Firstname" placeholder="Enter Firstname (e.g, Sam)" required>
+    <input type="text" name="lastname" id="LastName" placeholder="Enter Lastname (e.g, Smith)" required>
+    <input type="email" name="email" id="email" placeholder="Enter email(e.g, samsmith@gmail.com)" required> 
+      <input type="tel" name="phoneNum" id="phoneNUM" placeholder="Enter phone number(e.g, 123456789)" required>  
+    <input type="password" name="password" id="password" placeholder="password" required>
+ 
+      <button type="submit" class="save-btn">Save Settings</button>
+
+      <hr>
+
+
+    <div class="section-row">
+    <label> time reminder</label>
+    <input type="time" name="reminderTime" id="reminderTime" required>
+    
+      <button type="submit" class="save-btn">Save Time Settings</button>
+
+  
+    </div>
+      </form>
+
+  <hr class="divider">
+  <div class="bottom-btns">
+    <a href="/downloadData" class="download-btn">Download my data</a>
+    <a href="timeoveride.html" class="override-btn">Enter time override sytem for testing</a>
+  </div>
+  </div>
+    <hr class="divider">
+     <a href="login.html"class="override-btn">logout</a>
+  </div>
+  </div>
+</body>
+
+</html>
